@@ -1,0 +1,102 @@
+/* Page */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Cards container */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Single card */
+.pokemon-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.pokemon-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image */
+.pokemon-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Pokemon name */
+.pokemon-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+/* Types */
+.types {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.type {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: white;
+  background: #6c63ff;
+}
+
+/* Container for the search input */
+.pokemon-search {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  margin: 20px 0;            /* space above and below */
+}
+
+/* The input box */
+.pokemon-search input {
+  width: 300px;              /* adjust width */
+  padding: 10px 20px;        /* inside padding */
+  border: 2px solid #ccc;    /* light gray border */
+  border-radius: 25px;       /* rounded corners */
+  font-size: 16px;           /* readable text */
+  transition: all 0.3s ease; /* smooth focus effect */
+  outline: none;             /* remove default outline */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+/* Focus effect */
+.pokemon-search input:focus {
+  border-color: #ffcb05;      /* Pokémon yellow */
+  box-shadow: 0 0 10px rgba(255,203,5,0.5);
+}
+
+/* Placeholder style */
+.pokemon-search input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
